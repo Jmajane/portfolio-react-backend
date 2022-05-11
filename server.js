@@ -9,6 +9,10 @@ const about = require("./about.json")
 // Create our app object
 const app = express();
 
+
+// MiddleWare
+app.use(cors())
+
 // Home route for testing our app
 app.get("/", (req, res) => {
     res.send("Hello World");
